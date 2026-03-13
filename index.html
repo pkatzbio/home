@@ -471,11 +471,23 @@
         }
         
         .focus-areas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--spacing-sm);
-            margin-top: var(--spacing-md);
-        }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+@media (max-width: 1024px) {
+    .focus-areas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .focus-areas {
+        grid-template-columns: 1fr;
+    }
+}
         
         .focus-item {
             padding: var(--spacing-sm);
@@ -750,7 +762,7 @@
                     <p class="credentials">Ph.D., M.A., FHEA</p>
                     <p class="intro">
                         Clinical ethicist and interdisciplinary scholar working at the intersection of 
-                        epistemic justice and healthcare. I bring together analytic epistemology and 
+                        epistemic justice, embodied knowledge, and healthcare. I bring together analytic epistemology and 
                         continental philosophies of embodiment to explore how patients and care providers
                         make sense of their relationships to each other, health, and society.
                     </p>
@@ -775,12 +787,6 @@
                     I am the Clinical Ethics Fellow at University Hospitals Cleveland Medical Center and 
                     Lecturer in Bioethics at Case Western Reserve University School of Medicine. My path 
                     to clinical ethics combines philosophy, literature, and embodied practice.
-                </p>
-                <p>
-                    Before joining University Hospitals, I developed interdisciplinary bioethics curricula 
-                    at California Northstate University and Pacific Union College, where I taught medical humanities, 
-                    philosophy of language, and ethics to pre-health students. I hold a Ph.D. in English from Syracuse University and an M.A. 
-                    in Bioethics from The Ohio State University.
                 </p>
                 <p>
                     My research addresses epistemic injustice in clinical settings: how do we make sense of one 
@@ -887,10 +893,9 @@
                     </p>
                 </a>
                 
-                <div class="publication-card">
-                    <h4>The "Other" Principle</h4>
-                    <p class="publication-meta">American Journal of Bioethics</p>
-                    <span class="publication-status">Forthcoming</span>
+               <a href="https://doi.org/10.1080/15265161.2026.2623859" target="_blank" class="publication-card">
+                   <h4>The "Other" Principle</h4>
+                    <p class="publication-meta">American Journal of Bioethics, 2026</p> 
                     <p>
                         Proposes the importance of including justice claims in clinical ethics consultation notes, centering the 
                         perspectives of those most marginalized in healthcare decision-making.
@@ -955,8 +960,8 @@
             <div class="clinical-content">
                 <p>
                     As Clinical Ethics Fellow at University Hospitals Cleveland Medical Center, I provide 
-                    ethics consultation across the hospital system, collaborate on policy development, and 
-                    serve on multiple ethics committees including Pediatric Ethics and Patient-Without-Proxy.
+                    ethics consultation across the hospital system (at present >200 individual consults), 
+                    collaborate on policy development, and serve on multiple ethics committees including Pediatric Ethics and Patient-Without-Proxy.
                 </p>
                 <p>
                     My clinical work focuses on epistemic justice: ensuring that marginalized patients' 
@@ -1054,15 +1059,15 @@
                 <p>
                     I serve as <strong>Editor-in-Chief of <em>Martial Arts Studies</em></strong>, a peer-reviewed 
                     journal published by Cardiff University Press that explores the cultural, historical, and 
-                    philosophical dimensions of martial arts practice.
+                    philosophical dimensions of martial arts practice. Martial arts have been a lifelong practice for me:  
+                    I began training in martial arts when I was 6 years old, and have trained in American Kenpo (30 yrs), 
+                    Aikido (10 yrs), Taekwondo (5 yrs), Shotokan Karate (5 yrs), and Brazilian Jiujitsu (3 yrs).
                 </p>
                 
                 <img src="martial_arts_training.jpg" alt="Peter Katz training in martial arts" class="martial-arts-image">
                 
                 <h3>Research Focus</h3>
                 <p>
-                    I began training in martial arts when I was 6 years old, and have trained in American Kenpo (30 yrs), 
-                    Aikido (10 yrs), Taekwondo (5 yrs), Shotokan Karate (5 yrs), and Brazilian Jiujitsu (3 yrs).
                     My work in martial arts studies centers on embodiment, epistemology, and ethics. I examine 
                     how embodied practices cultivate particular orientations toward the world and others—questions 
                     that bridge my clinical ethics work and martial arts scholarship.
@@ -1093,8 +1098,8 @@
             <p style="max-width: 900px; font-size: 1.05rem;">
                 I believe ethics education should be experiential, reflective, and deeply connected to students' 
                 future practice. My teaching combines flipped classroom videos, self-grading rubrics that cultivate 
-                metacognition, and essay assignments that invite students to explore how their values will shape 
-                their professional lives.
+                metacognition, and essay assignments that introduce students to professional practice like consultation note-writing, or peer review and
+                publication.
             </p>
             
             <div class="teaching-highlights">
@@ -1110,13 +1115,16 @@
                     </p>
                 </div>
                 
-                <div class="highlight-card">
-                    <h4>Reflective Assessment</h4>
-                    <p>
-                        Students use self-grading rubrics to assess their own work, developing metacognitive skills 
-                        and taking ownership of their learning.
-                    </p>
-                </div>
+              <div class="highlight-card">
+    <h4>Reflective Assessment</h4>
+  <div class="highlight-card">
+    <h4>Reflective Assessment</h4>
+    <p>
+        Students use <a href="Rubric.pdf" target="_blank">self-grading rubrics</a> 
+        to assess their own work, developing metacognitive skills and taking ownership of their learning.
+    </p>
+</div>
+</div>
                   <div class="highlight-card">
                     <h4>Purposeful Writing</h4>
                     <p>
@@ -1138,11 +1146,14 @@
             
             <h3 style="margin-top: var(--spacing-lg);">Courses Taught</h3>
             <p>
-                Clinical Ethics Rotation, Urban Bioethics, Topics in Bioethics (Disability and Justice, Pain, 
-                Dignity and Justice, Dental Ethics), Introduction to Medical Ethics, Ethical Issues in Biotechnology, 
-                Introduction to Philosophy (Epistemology), Philosophy of Language, History and Philosophy of Science, 
-                Medical Humanities, Animal Studies and Ecocriticism
-            </p>
+    Clinical Ethics Rotation, Urban Bioethics II, Topics in Bioethics 
+    (<a href="Disability_Syllabus.pdf" target="_blank">Health, Illness, and Disability</a>; 
+    <a href="Pain_Syllabus.pdf" target="_blank">Pain</a>; 
+    Dignity, Dental Ethics), Introduction to Medical Ethics
+    Ethical Issues in Biotechnology, Introduction to Philosophy (Epistemology), <a href="Intro_Ethics_Syllabus.pdf" target="_blank">Introduction to Ethics,</a> 
+    Philosophy of Language, History and Philosophy of Science, Medical Humanities, 
+    Animal Studies and Ecocriticism
+</p>
             
             <p style="margin-top: var(--spacing-sm);">
                 <strong>Recognition:</strong> Fellow of the Higher Education Academy (UK, 2022), Educator of the Year 
